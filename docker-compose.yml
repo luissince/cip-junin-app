@@ -3,14 +3,14 @@ version: '3.8'
 
 # Definición de servicios
 services:
-  # Servicio llamado 'web-cip-junin-services'
-  web-cip-junin-services:
+  # Servicio llamado 'app-cip-junin-services'
+  app-cip-junin-services:
     # Configuración para construir la imagen del contenedor
     build:
       context: .
       dockerfile: Dockerfile
     # Nombre de la imagen resultante
-    image: web-cip-junin-image
+    image: app-cip-junin-image
     # Conexión a la red llamada 'luis'
     networks:
       - luis
@@ -18,7 +18,7 @@ services:
     ports:
       - 6507:3000
     # Nombre del contenedor
-    container_name: web-cip-junin
+    container_name: app-cip-junin
     # Configuración para reiniciar siempre el contenedor
     restart: always
 
