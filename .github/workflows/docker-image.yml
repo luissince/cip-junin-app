@@ -1,4 +1,4 @@
-name: Docker Staging CI - Web Cip Junin
+name: Docker Staging CI - App Cip Junin
 
 # Definición de eventos desencadenadores
 on:
